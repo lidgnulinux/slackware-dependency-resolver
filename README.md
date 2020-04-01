@@ -12,7 +12,7 @@ Clone the repo, make main script executable and run it with desired parameters.
 #### Get all dependencies of a package recursivly
 
     $ ./sdr.py {pkg-name}
-    
+
 Example:
 
     $ ./sdr.py llvm
