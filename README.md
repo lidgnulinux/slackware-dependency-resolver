@@ -1,4 +1,4 @@
-# Slackware dependecy resolver
+# Slackware Dependency Resolver
 
 A simple script that tells you what packages a package depends on and more.
 
