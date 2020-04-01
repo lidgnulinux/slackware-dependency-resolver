@@ -1,0 +1,1 @@
+slackware-dependecy-resolver.py
