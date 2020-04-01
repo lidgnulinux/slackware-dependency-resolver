@@ -1,6 +1,9 @@
 # Slackware Dependency Resolver
 
-A simple script that tells you what packages a package depends on and more.
+A python script that tells you what packages a package from official slackware package set depends on.
+It relies on a list of dependencies provided by salixos.org.
+
+> https://download.salixos.org/x86_64/slackware-14.2/PACKAGES.json
 
 
 ## Installation
