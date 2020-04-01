@@ -3,7 +3,7 @@
 A python script that tells you what packages a package from official slackware package set depends on.
 It relies on a list of dependencies provided by salixos.org.
 
-> https://download.salixos.org/x86_64/slackware-14.2/PACKAGES.json
+> [https://download.salixos.org/x86_64/slackware-14.2/PACKAGES.json](https://web.archive.org/web/20200401083139/https://download.salixos.org/x86_64/slackware-14.2/PACKAGES.json)
 
 
 ## Installation
