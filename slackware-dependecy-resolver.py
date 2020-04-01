@@ -9,13 +9,16 @@ Slackware Dependency Resolver (SDR)
 Author: Milad As (Ravexina)
 Github: https://github.com/ravexina/slackware-dependency-resolver
 
-COMES WITH NO GUARANTEE
-It depends on a list of dependencies provided by salixos.org
+The script relies on a list of dependencies provided by salixos.org
+
+===============================
+=== COMES WITH NO GUARANTEE ===
+===============================
 
 """
 
 
-class Dependencyr:
+class DependencyResolver:
 
     def __init__(self):
         # Load the json data
@@ -66,7 +69,7 @@ class Dependencyr:
 
 
 package_name = sys.argv[1]
-dependency_resolver = Dependencyr()
+dependency_resolver = DependencyResolver()
 
 dep_list = dependency_resolver.recursive_depends(package_name)
 print(dep_list)
