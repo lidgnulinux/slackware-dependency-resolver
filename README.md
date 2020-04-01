@@ -11,16 +11,16 @@ Clone the repo, make main script executable and run it with desired parameters.
 
 #### Get all dependencies of a package recursivly
 
-    $ ./sdr.py {pkg-name}
+    $ ./slackware-dependency-resolver.py {pkg-name}
 
 Example:
 
-    $ ./sdr.py llvm
+    $ ./slackware-dependency-resolver.py llvm
     {'gcc', 'mpfr', 'ncurses', 'zlib', 'gmp', 'libmpc', 'gcc-g++', 'libffi'}
 
 It also lets you choose between different options available:
 
-    $ ./sdr.py python
+    $ ./slackware-dependency-resolver.py python
     Seems there are options to choose from for "python":
     [0] openssl-solibs
     [1] openssl
