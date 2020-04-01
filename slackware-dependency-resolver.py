@@ -40,11 +40,14 @@ class DependencyResolver:
     def first_degree_depends(self, pkg_name):
         deps = self.packages_data[pkg_name]
 
-        # Check for multiple optios like [openssl-solibs/openssl] as 
+        # Check for multiple optios like [openssl-solibs/openssl] as
         # a single dependency
         dep_lst = []
         for dep in deps:
             if type(dep) is type([]):
+                #  Do not prompt for an already selected option
+                if not set(dep).isdisjoint(self.queue):
+                    continue
                 print('Seems there are options to choose from for "' + pkg_name + '":')
                 for index, name in enumerate(dep):
                     print('[' + str(index) + ']', name)
