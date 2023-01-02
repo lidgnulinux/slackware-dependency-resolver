@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+PWD=/home/lidg/cmp/sdp/
+
+python3 $PWD/slackware-dependency-resolver.py $1
+
+sleep 2
+
+cat /home/lidg/cmp/deps.txt | tr -d '{}\',\' 
